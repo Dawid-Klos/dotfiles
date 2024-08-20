@@ -16,7 +16,7 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id autorandr --change
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-exec --no-startup-id feh --bg-fill ~/dotfiles/backgrounds/Kath.png
+exec --no-startup-id feh --bg-fill ~/bg.png
 
 # Go to sleep and lock the screen after a period of inactivity
 # exec --no-startup-id xautolock -time 1 -locker "i3lock -i ~/dotfiles/backgrounds/Kath.png" -detectsleep
@@ -70,7 +70,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show drun 
 
 # lock screen
-#bindsym $mod+Control+l exec "xautolock -detectsleep -time 3 -locker \"i3lock -i home/dave/dotfiles/backgrounds/Kath.png\""
+bindsym $mod+Control+l exec ~/.config/i3/lock_and_sleep.sh
 
 # change focus
 bindsym $mod+h focus left
