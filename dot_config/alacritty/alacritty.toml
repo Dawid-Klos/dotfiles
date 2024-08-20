@@ -1,0 +1,28 @@
+import = [
+"~/.config/alacritty/catppuccin-mocha.toml",
+]
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[env]
+TERM = "screen-256color"
+
+[window]
+opacity = 0.95
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
