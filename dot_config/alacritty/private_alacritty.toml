@@ -9,7 +9,7 @@ italic = { family = "MesloLGS NF", style = "Italic" }
 TERM = "screen-256color"
 
 [window]
-opacity = 0.95
+opacity = 0.98
 padding = { x  = 0, y = 2 }
 
 [keyboard]
