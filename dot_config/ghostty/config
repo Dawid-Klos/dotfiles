@@ -1,0 +1,23 @@
+theme = catppuccin-mocha
+background-opacity = 0.98
+
+gtk-titlebar = false
+
+#font-family = MesloLGS NF
+#font-family-bold = MesloLGS NF Bold
+#font-family-italic = MesloLGS NF Italic
+#font-family-bold-italic = MesloLGS NF Bold Italic
+
+font-size = 13
+# font-style = Regular
+
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #f5e0dc
+
+# adjust-cell-width = -2%
+
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+keybind = ctrl+a=toggle_fullscreen
