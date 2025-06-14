@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Prompt for input
+query=$(rofi -dmenu -p "Search the web:")
+
+# Only proceed if the query isn't empty
+if [ -n "$query" ]; then
+    # Encode the query for a URL
+    encoded_query=$(printf '%s\n' "$query" | jq -sRr @uri)
+ 
+    # Choose your preferred search engine
+    brave "https://duckduckgo.com/?q=$encoded_query" &
+fi
