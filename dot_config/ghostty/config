@@ -1,5 +1,5 @@
 theme = catppuccin-mocha
-background-opacity = 0.98
+background-opacity = 0.9
 
 gtk-titlebar = false
 
@@ -18,6 +18,6 @@ cursor-color = #f5e0dc
 # adjust-cell-width = -2%
 
 shell-integration = zsh
-shell-integration-features = no-cursor
+shell-integration-features = no-sudo,no-cursor,no-title
 
 keybind = ctrl+a=toggle_fullscreen
