@@ -101,20 +101,24 @@ fi
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
-#
-#
+
+# rofi launcher
+export PATH="$HOME/.config/rofi/scripts:$PATH"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/bin/npm"
 export npm_config_prefix="$HOME/.local"
+
+# golang
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export PATH="$PATH:/home/dave/go/bin"
 
-# export Android paths
+# android
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
-# setup dotnet paths
+# dotnet
 export PATH="$PATH:~/.dotnet/tools"
 export DOTNET_ROOT="/usr/share/dotnet"
 export MSBuildSDKsPath=$( echo /usr/share/dotnet/sdk/6.*/Sdks );
