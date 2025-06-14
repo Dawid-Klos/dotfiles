@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+dir="$HOME/.config/rofi/launchers/type-2"
+theme='web-search'
+
 # Prompt for input
-query=$(rofi -dmenu -p "Search the web:")
+query=$(rofi \
+    -dmenu \
+    -theme "${dir}/${theme}".rasi \
+    -p "🔍 Search web: ")
 
 # Only proceed if the query isn't empty
 if [ -n "$query" ]; then
@@ -10,4 +16,6 @@ if [ -n "$query" ]; then
  
     # Choose your preferred search engine
     brave "https://duckduckgo.com/?q=$encoded_query" &
+    hyprctl dispatch 'workspace 1' &
 fi
+
