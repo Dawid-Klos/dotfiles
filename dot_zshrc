@@ -105,6 +105,11 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # rofi launcher
 export PATH="$HOME/.config/rofi/scripts:$PATH"
 
+# browser
+export BROWSER="brave"
+export CHROME_PATH="/usr/bin/brave"
+export EDGE_PATH="/usr/bin/brave"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/bin/npm"
 export npm_config_prefix="$HOME/.local"
