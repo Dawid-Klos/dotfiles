@@ -4,7 +4,8 @@ anchor=top-center
 layer=overlay
 width=380
 height=110
-border-radius=10
+border-radius=12
+outer-margin=64,0,-24,0
 
 # global colors
 background-color=#1e1e2e

@@ -21,7 +21,6 @@ return {
           json = { "prettier" },
           yaml = { "prettier" },
           markdown = { "prettier" },
-          kotlin = { "ktlint" },
         },
       }
       return opts
