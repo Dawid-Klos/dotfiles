@@ -1,5 +1,5 @@
 theme = catppuccin-mocha
-#background-opacity = 0.95
+background-opacity = 0.98
 gtk-titlebar = false
 
 font-family = JetBrainsMono Nerd Font

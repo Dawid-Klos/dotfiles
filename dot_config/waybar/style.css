@@ -1,8 +1,8 @@
 @import "mocha.css";
 
 * {
-  font-family: "MesloLGS NF";
-  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
   font-weight: 900;
   min-height: 0;
   padding-right: 2px;
@@ -11,15 +11,13 @@
 }
 
 #waybar {
-  background: transparent;
+  background-color: @mantle;
   color: @text;
-  margin: 2px 2px;
 }
 
 #workspaces {
   border-radius: 5px;
   margin: 5px;
-  background-color: @crust;
   margin-left: 0.5rem;
 }
 
@@ -51,9 +49,21 @@
 #custom-lock,
 #custom-power,
 #custom-arch {
-  background-color: @crust;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.4rem;
   margin: 5px 0;
+}
+
+#group-system,
+#group-media {
+  margin-right: 2rem;
+  border-radius: 8px;
+  padding: 0 4px;
+}
+
+#bluetooth {
+  font-size: 1rem;
+  color: @blue;
+  border-radius: 0px 5px 5px 0px;
 }
 
 #memory {
@@ -128,13 +138,20 @@
 }
 
 #custom-arch {
-  margin-left: 0.5rem;
-  color: @sapphire;
-  font-size: 1.5rem;
-  border-radius: 5px;
+  font-size: 1rem;
+  color: @blue;
+  padding: 0 0.5rem;
 }
 
-#tray {
-  margin-right: 0.5rem;
-  border-radius: 5px;
+tooltip {
+  background: @base;
+  color: @text;
+  border-radius: 12px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  padding: 16px;
+}
+
+tooltip label {
+  color: @text;
 }
