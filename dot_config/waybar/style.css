@@ -5,9 +5,6 @@
   font-size: 12px;
   font-weight: 900;
   min-height: 0;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 0px;
 }
 
 #waybar {
@@ -16,54 +13,38 @@
 }
 
 #workspaces {
-  border-radius: 5px;
-  margin: 5px;
-  margin-left: 0.5rem;
+  border-radius: 8px;
 }
 
 #workspaces button {
   color: @overlay1;
-  border-radius: 5px;
-  padding: 0.4rem;
+  border-radius: 8px;
 }
 
 #workspaces button.active {
   color: @mauve;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 #workspaces button:hover {
   color: @blue;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
+#custom-k8s,
 #custom-music,
-#tray,
-#backlight,
 #clock,
-#battery,
-#pulseaudio,
-#network,
 #cpu,
 #memory,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#tray,
+#backlight,
 #custom-lock,
-#custom-power,
-#custom-arch {
+#custom-power {
   padding: 0.25rem 0.4rem;
-  margin: 5px 0;
-}
-
-#group-system,
-#group-media {
-  margin-right: 2rem;
-  border-radius: 8px;
-  padding: 0 4px;
-}
-
-#bluetooth {
-  font-size: 1rem;
-  color: @blue;
-  border-radius: 0px 5px 5px 0px;
 }
 
 #memory {
@@ -82,15 +63,24 @@
 
 #clock {
   color: @mauve;
-  border-radius: 5px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  border-radius: 8px;
+}
+
+#bluetooth {
+  font-size: 1rem;
+  color: @blue;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: -10px;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 5px 0px 0px 5px;
 }
 
 #battery {
   color: @green;
   border-radius: 0px 5px 5px 0px;
-  margin-right: 0.5rem;
 }
 
 #battery.charging {
@@ -109,15 +99,9 @@
   border-radius: 0;
 }
 
-#pulseaudio {
-  color: @maroon;
-  border-radius: 5px 0px 0px 5px;
-  margin-left: 0.5rem;
-}
-
 #custom-music {
-  color: @mauve;
-  border-radius: 5px;
+  color: @blue;
+  border-radius: 8px;
 }
 
 #custom-lock {
@@ -128,19 +112,37 @@
 #custom-power {
   border-radius: 0px 5px 5px 0px;
   color: @red;
-  margin-right: 0.5rem;
 }
 
 #custom-power button {
   color: @overlay1;
-  border-radius: 5px;
-  padding: 0.4rem;
+  border-radius: 8px;
 }
 
 #custom-arch {
-  font-size: 1rem;
   color: @blue;
-  padding: 0 0.5rem;
+  font-size: 1rem;
+}
+
+#custom-k8s {
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#custom-k8s.k8s-up {
+  color: #a6e3a1;
+  background-color: rgba(166, 227, 161, 0.05);
+}
+
+#custom-k8s.k8s-down {
+  color: #f28fad;
+  background-color: rgba(242, 143, 173, 0.05);
+}
+
+#custom-k8s.k8s-up:hover,
+#custom-k8s.k8s-down:hover {
+  color: #f9e2af;
 }
 
 tooltip {
@@ -149,7 +151,6 @@ tooltip {
   border-radius: 12px;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
-  padding: 16px;
 }
 
 tooltip label {
