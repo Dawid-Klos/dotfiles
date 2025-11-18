@@ -1,0 +1,3 @@
+export NEXTCLOUD_URL="http://192.168.4.123"
+export PIHOLE_URL="http://192.168.4.130/admin"
+export BACKEND_URL="http://192.168.4.120:8080"

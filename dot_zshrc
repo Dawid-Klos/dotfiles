@@ -96,14 +96,24 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Add ~/scripts to PATH
+export PATH="$HOME/scripts:$PATH"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+# Alias yay to use the safe wrapper
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias yay='yay-safe.sh'
+alias ls='eza --icons'
+
+# eza colors
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
 # rofi launcher
 export PATH="$HOME/.config/rofi/scripts:$PATH"
