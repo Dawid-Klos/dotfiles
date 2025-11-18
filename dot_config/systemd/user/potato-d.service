@@ -1,0 +1,14 @@
+[Unit]
+Description=Potato-c Daemon
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/potd
+Restart=always
+RestartSec=5
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+
+[Install]
+WantedBy=default.target

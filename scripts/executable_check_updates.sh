@@ -18,7 +18,7 @@ fi
 if [ "$updates" -gt 0 ] && [ "$updates" != "$last_notified" ]; then
 notify-send \
   --app-name="System Updates" \
-  " System Update" \
+  "  System Update" \
   "$updates package(s) available" \
   2>> /tmp/check-updates.log
 elif [ "$updates" -eq 0 ]; then

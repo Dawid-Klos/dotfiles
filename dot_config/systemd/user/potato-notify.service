@@ -1,0 +1,15 @@
+[Unit]
+Description=Pomodoro Notifications for potato-c
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash -c 'while true; do ~/scripts/potato_5min_left.sh.sh; sleep 10; done'
+Restart=always
+RestartSec=10
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
+
+[Install]
+WantedBy=default.target

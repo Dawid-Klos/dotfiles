@@ -1,11 +1,10 @@
 # layout + size
 sort=-time
-anchor=top-center
+anchor=top-right
 layer=overlay
 width=380
 height=110
 border-radius=12
-outer-margin=64,0,-24,0
 
 # global colors
 background-color=#1e1e2e
@@ -13,10 +12,11 @@ text-color=#cdd6f4
 border-color=#b4befe
 progress-color=#313244
 
-font=Meslo LGS NF 11
+font=JetBrainsMono Nerd Font 11
 icons=1
 max-icon-size=64
 
+actions=1
 default-timeout=5000
 ignore-timeout=1
 padding=8,12,12
@@ -24,7 +24,16 @@ padding=8,12,12
 [urgency=normal]
 border-color=#d08770
 
-[urgency=high]
+[urgency=critical]
 border-color=#fab387
-default-timeout=0
 text-color=#1e1e2e
+default-timeout=0
+
+[app-name="System Updates"]
+default-timeout=0
+margin=10
+padding=8,12,12
+border-color=#fab387
+on-button-left=exec sh -c 'makoctl dismiss && ghostty -e bash -c "$HOME/scripts/yay-safe.sh -Syu; echo '"'"''"'"'; echo '"'"'Press any key to close...'"'"'; read -n1"'
+on-button-right=exec makoctl dismiss
+

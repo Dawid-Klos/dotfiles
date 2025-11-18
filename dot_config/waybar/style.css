@@ -112,6 +112,7 @@
 #custom-power {
   border-radius: 0px 5px 5px 0px;
   color: @red;
+  margin-right: 0.4rem;
 }
 
 #custom-power button {
@@ -128,6 +129,8 @@
   font-size: 12px;
   font-weight: bold;
   border-radius: 8px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 #custom-k8s.k8s-up {
@@ -145,12 +148,35 @@
   color: #f9e2af;
 }
 
+#custom-potato {
+  padding: 0.25rem 0.6rem;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+#custom-potato.running {
+  color: @mauve;
+}
+#custom-potato.paused {
+  color: @peach;
+}
+#custom-potato.break {
+  color: @blue;
+}
+#custom-potato.idle {
+  color: @overlay1;
+}
+
+#custom-potato:hover {
+  background-color: rgba(203, 166, 247, 0.06);
+}
+
 tooltip {
   background: @base;
   color: @text;
   border-radius: 12px;
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 12px;
+  font-size: 14px;
 }
 
 tooltip label {

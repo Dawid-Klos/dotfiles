@@ -4,7 +4,7 @@ handle() {
   case $1 in monitoradded*)
     hyprctl dispatch moveworkspacetomonitor "1 1"
     hyprctl dispatch moveworkspacetomonitor "2 1"
-    hyprctl dispatch moveworkspacetomonitor "3 2"
+    hyprctl dispatch moveworkspacetomonitor "3 1"
   esac
 }
 

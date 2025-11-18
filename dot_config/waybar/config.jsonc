@@ -3,9 +3,15 @@
   "position": "top",
   "spacing": 14,
   "height": 36,
-  "modules-left": ["custom/arch", "hyprland/workspaces", "custom/k8s", "custom/music"],
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces",
+    "custom/k8s",
+    "custom/music"
+  ],
   "modules-center": ["clock"],
   "modules-right": [
+    "custom/potato",
     "group/system",
     "group/media",
     // "tray",
@@ -24,11 +30,21 @@
   },
   "custom/k8s": {
     "exec": "/home/dave/scripts/k8s_status.sh",
-    "interval": 30,
+    "interval": 60,
     "return-type": "json"
+  },
+  "custom/potato": {
+    "exec": "/home/dave/scripts/potato_bar.sh",
+    "interval": 1,
+    "return-type": "json",
+    "on-click": "/home/dave/scripts/potato_click.sh",
+    "on-click-middle": "/home/dave/scripts/potato_cycle.sh",
+    "on-click-right": "/home/dave/scripts/potato_right_click.sh",
+    "tooltip": false
   },
   "custom/arch": {
     "format": " 󰣇 ",
+    "on-click": "ghostty -e fastfetch",
     "tooltip": false
   },
   "hyprland/workspaces": {
@@ -66,7 +82,7 @@
     "interval": 10
   },
   "bluetooth": {
-    "format": "󰂯",
+    "format": "󰂯 ",
     "format-disabled": "󰂲 ",
     "format-connected": "󰂯 ",
     "tooltip-format": "Devices connected: {num_connections}",
