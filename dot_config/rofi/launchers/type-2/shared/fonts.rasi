@@ -8,5 +8,5 @@
  **/
 
 * {
-    font: "MesloLGS NF 14";
+  font: "JetBrainsMono Nerd Font 14";
 }

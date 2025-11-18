@@ -83,12 +83,10 @@ configuration {
 
 	/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";
-  font: "MesloLGS NF 14";
+  font: "JetBrainsMono Nerd Font 14";
 	sort: false;
 	threads: 0;
 	click-to-exit: true;
-/*	ignored-prefixes: "";*/
-/*	pid: "/run/user/1000/rofi.pid";*/
 
 	/*---------- File browser settings ----------*/
     filebrowser {
