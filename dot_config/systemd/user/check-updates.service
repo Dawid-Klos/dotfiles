@@ -4,7 +4,8 @@ After=graphical.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash -c ~/scripts/check_updates.sh
+#ExecStart=/usr/bin/bash -c ~/scripts/check_updates.sh
+ExecStart=/usr/bin/bash /home/dave/scripts/check_updates.sh
 Environment=WAYLAND_DISPLAY=wayland-0
 Environment=XDG_RUNTIME_DIR=/run/user/%U
 Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
