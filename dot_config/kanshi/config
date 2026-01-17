@@ -9,7 +9,7 @@ profile tv {
 }
 
 profile projector {
-    output "DP-3" enable mode 1920x1080 position 0,0
+    output "DP-3" enable mode 1920x1080 scale 1 position 0,0
     output "eDP-1" enable mode 3840x2400 scale 2 position 1920,0
 }
 
