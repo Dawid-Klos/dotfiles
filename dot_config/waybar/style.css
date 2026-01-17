@@ -148,29 +148,6 @@
   color: #f9e2af;
 }
 
-#custom-potato {
-  padding: 0.25rem 0.6rem;
-  font-weight: 900;
-  border-radius: 8px;
-}
-
-#custom-potato.running {
-  color: @mauve;
-}
-#custom-potato.paused {
-  color: @peach;
-}
-#custom-potato.break {
-  color: @blue;
-}
-#custom-potato.idle {
-  color: @overlay1;
-}
-
-#custom-potato:hover {
-  background-color: rgba(203, 166, 247, 0.06);
-}
-
 tooltip {
   background: @base;
   color: @text;

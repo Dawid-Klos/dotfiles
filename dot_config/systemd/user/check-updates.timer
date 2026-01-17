@@ -2,7 +2,7 @@
 Description=Check for updates periodically
 
 [Timer]
-OnBootSec=2min
+OnBootSec=5min
 OnUnitActiveSec=1h
 Persistent=true
 
