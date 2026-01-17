@@ -25,7 +25,7 @@ NEXTCLOUD_STATUS=$(check_http "$NEXTCLOUD_URL")
 PIHOLE_STATUS=$(check_http "$PIHOLE_URL")
 BACKEND_STATUS=$(check_http "$BACKEND_URL")
 
-if [[ "$NEXTCLOUD_STATUS$PIHOLE_STATUS$BACKEND_STATUS" == *"✖"* ]]; then
+if [[ "$NEXTCLOUD_STATUS$PIHOLE_STATUS$BACKEND_STATUS" == *""* ]]; then
     CLASS="k8s-down"
 else
     CLASS="k8s-up"
