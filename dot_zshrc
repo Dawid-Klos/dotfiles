@@ -109,10 +109,31 @@ export PATH="$HOME/scripts:$PATH"
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+
 alias yay="yay-safe.sh"
 alias ls="eza --icons"
+
+# k3s
 alias k="kubectl"
 alias kdash="kubectl -n kubernetes-dashboard create token admin-user --duration=3h"
+
+## fzf
+# cd into a directory
+alias c='cd "$(fd --type d | fzf)" || return'
+
+# open file in nvim
+alias f='nvim $(fd --type f | fzf)'
+
+# open file with preview
+alias fp='nvim "$(fd --type f | fzf --preview "bat --style=numbers --color=always {}")"'
+
+# serach inside files
+alias fs='rg --line-number "" | fzf'
+
+# stforge project
+alias sfc='~/stforge.sh client'
+alias sfs='~/stforge.sh server'
+alias sfr='~/stforge.sh root'
 
 # eza colors
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
@@ -151,3 +172,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 # specifically for Electron apps
 export ELECTRON_ENABLE_WAYLAND=1
+
+# fzf integration
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
