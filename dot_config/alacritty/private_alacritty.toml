@@ -1,9 +1,10 @@
 
 [font]
-size = 12.75
-normal = { family = "MesloLGS NF", style = "Regular" }
-bold = { family = "MesloLGS NF", style = "Bold" }
-italic = { family = "MesloLGS NF", style = "Italic" }
+size = 14
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+bold = { family = "JetBrainsMono NF", style = "Bold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+
 
 [env]
 TERM = "screen-256color"
