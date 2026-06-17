@@ -58,8 +58,9 @@
     "max-length": 40
   },
   "clock": {
-    "timezone": "Europe/London",
-    "tooltip-format": "󰸗  <big>{:%A, %d %B %Y}</big>",
+    "timezone": "Europe/Warsaw",
+    "locale": "pl_PL.UTF-8",
+    "tooltip-format": "󰸗  <big>{:L%A, %d %B %Y}</big>",
     "format": "  {:%H:%M:%S}",
     "interval": 1
   },

@@ -44,6 +44,8 @@ alias sfc='~/stforge.sh client'
 alias sfs='~/stforge.sh server'
 alias sfr='~/stforge.sh root'
 
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+
 # eza colors
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
