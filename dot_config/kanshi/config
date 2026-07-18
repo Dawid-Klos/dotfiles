@@ -1,5 +1,5 @@
 profile docked {
-  output "DP-1" enable mode 3840x2560@60 scale 2 position 0,0
+	output "BNQ BenQ RD280UA BBR0014601Q" enable mode 3840x2560@60 scale 2 position 0,0
   output "eDP-1" disable
 }
 
