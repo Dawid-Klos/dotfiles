@@ -1,14 +1,12 @@
 theme = catppuccin-mocha
 window-vsync = true
-background-opacity = 0.98
 gtk-titlebar = false
 
-font-family = JetBrainsMono NF
-font-size = 14
+font-family = JetBrainsMono NFM
+font-size = 13
 font-thicken = true
 cursor-style = block
 cursor-style-blink = false
-cursor-color = #f5e0dc
 
 shell-integration = zsh
 shell-integration-features = no-sudo,no-cursor,no-title
